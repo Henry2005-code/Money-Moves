@@ -1,0 +1,83 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* Global styles */
+
+html {
+    height: 100%;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: navy;
+    background-color: gold;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+  }
+  
+  header {
+    background-color: navy;
+    color: gold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: gold;
+    text-decoration: none;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    flex: 1;
+  }
+  
+  section {
+    margin: 50px 0;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  img {
+    max-width: 20%;
+    height: auto;
+    float: left;
+    margin: 0 10px 10px 0; /* add some spacing between the image and text */
+    border-radius: 50%; /* add border-radius to make the image round */
+    object-fit: cover; /* maintain aspect ratio while resizing the image */
+  }
+  
+  footer {
+    background-color: navy;
+    color: gold;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    flex-shrink: 0;
+  }

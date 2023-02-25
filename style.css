@@ -1,0 +1,143 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+
+  html {
+    height: 100%;
+  }
+
+
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: navy;
+    background-color: gold;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: gold;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    
+  }
+  
+  /* Navigation menu styles */
+  nav {
+    background-color: navy;
+    color: gold;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: gold;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main content area styles */
+  main {
+    padding: 20px;
+    flex: 1;
+  }
+  
+
+  
+  /* Style hero section */
+  .hero {
+    /* background-color: #f0ad4e; */
+    color: navy;
+    text-align: center;
+    padding: 50px;
+    margin-top: 50px;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-top: 0;
+  }
+  
+  .hero p {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+
+
+  section {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  form input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    width: 200px;
+  }
+  
+  form button[type="submit"] {
+    color: gold;
+    padding: 5px 10px;
+    background-color: navy;
+  }
+
+  .cta {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: navy;
+    color: gold;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+
+  footer {
+    background-color: navy;
+    color: gold;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+  
