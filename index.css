@@ -1,0 +1,168 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: green;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+}
+
+/* Header styles */
+header {
+  background-color: green;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Main content area styles */
+main {
+  padding: 20px;
+  flex: 1;
+}
+
+section {
+  margin-bottom: 20px;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input[type="text"] {
+  padding: 5px;
+  font-size: 16px;
+  width: 200px;
+}
+
+form button[type="submit"] {
+  color: white;
+  padding: 5px 10px;
+  background-color: green;
+}
+
+/* Footer styles */
+footer {
+  background-color: green;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+/* Other styles */
+p {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+#loading_container {
+  display: none;
+  width: 200px;
+  margin-top: 1%;
+  margin-left: 45%;
+  margin-right: auto;
+}
+
+/* #company_container {
+  margin-top: 5%;
+  margin-left: 32%;
+  margin-right: auto;
+} */
+
+
+#company_container {
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; /* adjust this value based on the desired container width */
+  text-align: center; /* center the text and elements inside the container */
+}
+
+#data_buttons{
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+#table_chart{
+  display: flex;
+  flex-direction: column;
+}
+
+#chartContainer {
+  height: 300px;
+  width: 70%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 13%;
+  margin-right: auto;
+}
+
+#table_container {
+  margin-left: 30px;
+  margin-top: 1%;
+  width: 100%;
+  margin-right: 20px;
+}
+
+
+
+#para {
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+#download_data {
+  display: none;
+  margin-top: 20px;
+  margin-left: 42%;
+  margin-right: auto;
+}

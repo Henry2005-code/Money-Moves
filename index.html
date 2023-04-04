@@ -1,41 +1,59 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Money Moves!</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Data/Stock</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
   <header>
-    <h1>Money Moves!</h1>
+    <header>
+      <h1>Stocks!</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="index.html">Test</a></li>
+        <li><a href="stocks.html">Stocks</a></li>
+        <li><a href="News.html">News</a></li>
+        <li><a href="About.html">About Us</a></li>
+      </ul>
+    </nav>
+
   </header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="stocks.html">Stocks</a></li>
-      <li><a href="News.html">News</a></li>
-      <li><a href="About.html">About Us</a></li>
-    </ul>
-  </nav>
-  <div class="hero">
-    <h1>Financial Data for Your Favorite Stocks</h1>
-    <p>Get real-time financial data, news, and analysis for your favorite stocks</p>
-    <a href="#" class="cta">Start Now</a>
+  <div id="loading_container">
+    <h6 style="margin-left: 11%;">Loading data.....</h6>
+    <progress></progress>
   </div>
-  <main>
-    <!-- <section>
-      <h2>Stocks</h2>
-      <p>Enter a stock symbol to get the latest financial data:</p>
-      <form>
-        <label for="symbol">Stock Symbol:</label>
-        <input type="text" id="symbol" name="symbol">
-        <button type="submit">Search</button>
-      </form>
-      <div id="results"></div>
-    </section> -->
-  </main>
-  <footer>
-    <p>&copy; 2023 Money Moves!</p>
-  </footer>
-  <script src="script.js"></script>
+
+  <div id="company_container">
+    <p>Select a company to get the latest financial data:</p>
+    <select id="companies" class="btn btn-light" name="companies">
+      <option value="Apple Inc(AAPL)">Apple Inc(AAPL)</option>
+      <option value="Microsoft Corp(MSFT)">Microsoft Corp(MSFT)</option>
+      <option value="International Business Machine(IBM)">International Business Machine(IBM)</option>
+    </select>
+    <div id="data_buttons">
+      <button id="get_data" onclick="getData()" class="btn btn-primary" style="margin-left: 5%;">Get Data</button>
+      <button id="download_data" onclick="download()" class="btn btn-success">Download Data(CSV)</button>
+    </div>
+    <!-- <div>
+        <button id="download_data" onclick="download()" class="btn btn-success">Download Data(CSV)</button>
+      </div> -->
+  </div>
+  <div id="table_chart">
+    <div id="chartContainer"></div>
+    <div id="table_container"></div>
+  </div>
+  <!-- <div id="chartContainer"></div>
+  <div id="table_container"></div> -->
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script src="index.js"></script>
+
 </html>

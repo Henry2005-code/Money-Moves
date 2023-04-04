@@ -16,8 +16,8 @@
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color: navy;
-    background-color: gold;
+    color: green;
+    background-color: white;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -26,7 +26,7 @@
   
   /* Header styles */
   header {
-    background-color: gold;
+    background-color: white;
     padding: 20px;
     text-align: center;
     align-items: center;
@@ -39,8 +39,8 @@
   
   /* Navigation menu styles */
   nav {
-    background-color: navy;
-    color: gold;
+    background-color: green;
+    color: white;
     padding: 10px;
   }
   
@@ -57,7 +57,7 @@
   }
   
   nav ul li a {
-    color: gold;
+    color: white;
     text-decoration: none;
   }
   
@@ -76,7 +76,7 @@
   /* Style hero section */
   .hero {
     /* background-color: #f0ad4e; */
-    color: navy;
+    color: green;
     text-align: center;
     padding: 50px;
     margin-top: 50px;
@@ -114,16 +114,16 @@
   }
   
   form button[type="submit"] {
-    color: gold;
+    color: white;
     padding: 5px 10px;
-    background-color: navy;
+    background-color: green;
   }
 
   .cta {
     display: inline-block;
     padding: 12px 24px;
-    background-color: navy;
-    color: gold;
+    background-color: green;
+    color: white;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
@@ -133,8 +133,8 @@
   
 
   footer {
-    background-color: navy;
-    color: gold;
+    background-color: green;
+    color: white;
     padding: 20px;
     text-align: center;
     font-size: 14px;
